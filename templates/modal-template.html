@@ -1,0 +1,12 @@
+<div class="modal-header">
+	<h4 class="modal-title">{{config.data.title}}</h4>
+</div>
+<div class="modal-body"
+	x-ng-keyup="config.keyup($event, data, instance)"
+	x-ng-include="config.include"></div>
+<div class="modal-footer">
+	<button class="btn" x-ng-repeat="btn in config.buttons"
+		x-ng-class="btn.type ? 'btn-' + btn.type : 'btn-default'"
+		x-ng-style="btn.style ? btn.style : null"
+		x-ng-click="btn.click($event, data, instance)">{{btn.label}}</button>
+</div>

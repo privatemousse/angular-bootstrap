@@ -1,0 +1,14 @@
+<div class="form-group">
+	<div class="row">
+		<div class="col-md-6">
+			<label class="control-label">Title</label>
+			<input class="form-control" type="text" x-ng-focus="config.select($event, data.title, instance)" x-ng-model="data.title">
+			<span class="help-block" x-ng-show="data.title === ''">Required</span>
+		</div>
+		<div class="col-md-6">
+			<label class="control-label">Message</label>
+			<input class="form-control" type="text" x-ng-focus="config.select($event, data.message, instance)" x-ng-model="data.message">
+			<span class="help-block" x-ng-show="data.message === ''">Required</span>
+		</div>
+	</div>
+</div>

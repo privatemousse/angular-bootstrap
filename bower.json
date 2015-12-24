@@ -1,0 +1,31 @@
+{
+  "name": "angular-bootstrap-modal",
+  "version": "0.1.0",
+  "authors": [
+    "Dan Nguyen <nghuudan@gmail.com>"
+  ],
+  "description": "Example of using the Angular UI Bootstrap Modal",
+  "main": "app.js",
+  "keywords": [
+    "angular",
+    "ui",
+    "bootstrap",
+    "modal",
+    "example"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nghuudan",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "~1.3.15",
+    "angular-ui-bootstrap-bower": "~0.13.0",
+    "angular": "~1.3.15",
+    "paper-less": "*"
+  }
+}
