@@ -1,23 +1,19 @@
 <!doctype html>
-<html x-ng-app="modalDemoApp">
+<html ng-app="modalDemoApp">
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Angular Bootstrap Modal</title>
 	<link rel="stylesheet" href="bower_components/paper-less/css/paper.css">
-	<style>
-		.ng-cloak {
-			display: none;
-		}
-	</style>
 </head>
 <body>
-	<div class="container ng-cloak" x-ng-controller="MainCtrl">
+	<div class="container" ng-controller="mainController">
 		<div class="page-header">
-			<h1>Angular Bootstrap Modal</h1>
+			<h1>Angular Bootstrap</h1>
 		</div>
-		<button class="btn btn-primary" x-ng-click="showModal()">{{buttonLabel}}</button>
+		<!--  ng-click="showModal()" 点击执行showModal()函数-->
+		<button class="btn btn-primary" ng-click="showModal()">{{buttonLabel}}</button>
 	</div>
 
 	<script src="bower_components/angular/angular.js"></script>
